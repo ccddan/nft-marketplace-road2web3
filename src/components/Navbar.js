@@ -1,14 +1,15 @@
-import logo from '../logo_3.png';
-import fullLogo from '../full_logo.png';
 import {
+  Link,
+  Route,
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
+  useParams,
+  useRouteMatch
 } from "react-router-dom";
 import { useEffect, useState } from 'react';
+
+import fullLogo from '../full_logo.png';
+import logo from '../logo_3.png';
 import { useLocation } from 'react-router';
 
 function Navbar() {
@@ -31,33 +32,33 @@ const [currAddress, updateAddress] = useState('0x');
           </li>
           <li className='w-2/6'>
             <ul className='lg:flex justify-between font-bold mr-10 text-lg'>
-              {location.pathname === "/" ? 
+              {location.pathname === "/" ?
               <li className='border-b-2 hover:pb-0 p-2'>
                 <Link to="/">Marketplace</Link>
               </li>
               :
               <li className='hover:border-b-2 hover:pb-0 p-2'>
                 <Link to="/">Marketplace</Link>
-              </li>              
+              </li>
               }
-              {location.pathname === "/sellNFT" ? 
+              {location.pathname === "/sellNFT" ?
               <li className='border-b-2 hover:pb-0 p-2'>
                 <Link to="/sellNFT">List My NFT</Link>
               </li>
               :
               <li className='hover:border-b-2 hover:pb-0 p-2'>
                 <Link to="/sellNFT">List My NFT</Link>
-              </li>              
-              }              
-              {location.pathname === "/profile" ? 
+              </li>
+              }
+              {location.pathname === "/profile" ?
               <li className='border-b-2 hover:pb-0 p-2'>
                 <Link to="/profile">Profile</Link>
               </li>
               :
               <li className='hover:border-b-2 hover:pb-0 p-2'>
                 <Link to="/profile">Profile</Link>
-              </li>              
-              }  
+              </li>
+              }
               <li>
                 <button className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">{connected? "Connected":"Connect Wallet"}</button>
               </li>

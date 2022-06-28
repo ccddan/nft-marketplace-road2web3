@@ -1,6 +1,6 @@
-import Navbar from "./Navbar";
-import NFTTile from "./NFTTile";
 import MarketplaceJSON from "../Marketplace.json";
+import NFTTile from "./NFTTile";
+import Navbar from "./Navbar";
 import axios from "axios";
 import { useState } from "react";
 
@@ -48,7 +48,7 @@ return (
                     return <NFTTile data={value} key={index}></NFTTile>;
                 })}
             </div>
-        </div>            
+        </div>
     </div>
 );
 

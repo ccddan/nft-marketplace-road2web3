@@ -1,22 +1,23 @@
-import Navbar from "./Navbar";
 import { useLocation, useParams } from 'react-router-dom';
+
 import MarketplaceJSON from "../Marketplace.json";
+import NFTTile from "./NFTTile";
+import Navbar from "./Navbar";
 import axios from "axios";
 import { useState } from "react";
-import NFTTile from "./NFTTile";
 
 export default function Profile () {
     const [data, updateData] = useState([]);
     const [address, updateAddress] = useState("0x");
     const [totalPrice, updateTotalPrice] = useState("0");
-    
+
     return (
         <div className="profileClass" style={{"min-height":"100vh"}}>
             <Navbar></Navbar>
             <div className="profileClass">
             <div className="flex text-center flex-col mt-11 md:text-2xl text-white">
                 <div className="mb-5">
-                    <h2 className="font-bold">Wallet Address</h2>  
+                    <h2 className="font-bold">Wallet Address</h2>
                     {address}
                 </div>
             </div>

@@ -1,8 +1,9 @@
-import Navbar from "./Navbar";
-import { useState } from "react";
 import { uploadFileToIPFS, uploadJSONToIPFS } from "../pinata";
+
 import Marketplace from '../Marketplace.json';
+import Navbar from "./Navbar";
 import { useLocation } from "react-router";
+import { useState } from "react";
 
 export default function SellNFT () {
     const [formParams, updateFormParams] = useState({ name: '', description: '', price: ''});

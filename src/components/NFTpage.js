@@ -1,7 +1,8 @@
+import { useLocation, useParams } from 'react-router-dom';
+
+import MarketplaceJSON from "../Marketplace.json";
 import Navbar from "./Navbar";
 import axie from "../tile.jpeg";
-import { useLocation, useParams } from 'react-router-dom';
-import MarketplaceJSON from "../Marketplace.json";
 import axios from "axios";
 import { useState } from "react";
 
@@ -37,7 +38,7 @@ const [currAddress, updateCurrAddress] = useState("0x");
                         <div className="text-emerald-700">You are the owner of this NFT</div>
                         : <button className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">Buy this NFT</button>
                     }
-                    
+
                     <div className="text-green text-center mt-3">{message}</div>
                     </div>
                 </div>
