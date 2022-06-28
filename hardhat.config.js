@@ -31,4 +31,13 @@ module.exports = {
       },
     },
   },
+  gasReporter: {
+    enabled: true,
+    currency: "USD",
+  },
+  etherscan: {
+    apiKey: {
+      goerli: process.env.GOERLI_ETHERSCAN_API_KEY,
+    },
+  },
 };
