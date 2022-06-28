@@ -141,3 +141,8 @@ dist
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+
+# Hardhat
+artifacts/
+cache/
