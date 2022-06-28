@@ -18,8 +18,8 @@ module.exports = {
       chainId: 1337,
     },
     goerli: {
-      url: "<YOUR_ALCHEMY_URL>",
-      accounts: ["<YOUR_PRIVATE_KEY>"],
+      url: process.env.REACT_APP_GOERLI_RPC_URL,
+      accounts: [process.env.REACT_APP_PRIVATE_KEY],
     },
   },
   solidity: {

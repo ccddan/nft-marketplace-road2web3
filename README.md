@@ -3,6 +3,7 @@
 To set up the repository and run the marketplace locally, run the following commands:
 
 ```bash
-npm install
-npm start
+$ npm install
+$ cp .example.env .env # update values in .env
+$ npm start
 ```
