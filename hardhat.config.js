@@ -5,6 +5,7 @@ const fs = require("fs");
 
 if (process.env.NODE_ENV != "production") {
   require("dotenv").config();
+  console.info("loaded .env file");
 }
 
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
