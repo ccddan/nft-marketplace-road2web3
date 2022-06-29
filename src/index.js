@@ -2,7 +2,6 @@ import "./index.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import App from "./App";
 import Marketplace from "./components/Marketplace";
 import NFTPage from "./components/NFTpage";
 import Profile from "./components/Profile";
