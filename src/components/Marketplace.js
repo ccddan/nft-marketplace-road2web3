@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 
-import MarketplaceJSON from "../Marketplace.json";
 import NFTTile from "./NFTTile";
 import Navbar from "./Navbar";
-import axios from "axios";
 import { fetchNFTsForCollection } from "../utils";
 
 const metadata = require("./../Marketplace.json");
