@@ -83,8 +83,8 @@ function Navbar() {
               </div>
             </Link>
           </li>
-          <li className="w-2/6">
-            <ul className="lg:flex justify-between font-bold mr-10 text-lg">
+          <li className="w-3/6">
+            <ul className="md:flex justify-between font-bold mr-10 text-lg">
               {location.pathname === "/" ? (
                 <li className="border-b-2 hover:pb-0 p-2">
                   <Link to="/">Marketplace</Link>
@@ -96,20 +96,29 @@ function Navbar() {
               )}
               {location.pathname === "/sellNFT" ? (
                 <li className="border-b-2 hover:pb-0 p-2">
-                  <Link to="/sellNFT">List My NFT</Link>
+                  <Link to="/sellNFT">New NFT</Link>
                 </li>
               ) : (
                 <li className="hover:border-b-2 hover:pb-0 p-2">
-                  <Link to="/sellNFT">List My NFT</Link>
+                  <Link to="/sellNFT">New NFT</Link>
                 </li>
               )}
-              {location.pathname === "/profile" ? (
+              {location.pathname === "/dashboard" ? (
                 <li className="border-b-2 hover:pb-0 p-2">
-                  <Link to="/profile">Profile</Link>
+                  <Link to="/dashboard">Dashboard</Link>
                 </li>
               ) : (
                 <li className="hover:border-b-2 hover:pb-0 p-2">
-                  <Link to="/profile">Profile</Link>
+                  <Link to="/dashboard">Dashboard</Link>
+                </li>
+              )}
+              {location.pathname === "/bought" ? (
+                <li className="border-b-2 hover:pb-0 p-2">
+                  <Link to="/bought">Bought</Link>
+                </li>
+              ) : (
+                <li className="hover:border-b-2 hover:pb-0 p-2">
+                  <Link to="/bought">Bought</Link>
                 </li>
               )}
               <li>

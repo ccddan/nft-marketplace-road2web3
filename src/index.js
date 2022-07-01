@@ -3,6 +3,7 @@ import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Marketplace from "./components/Marketplace";
+import MyNFTs from "./components/MyNFTs";
 import NFTPage from "./components/NFTpage";
 import Profile from "./components/Profile";
 import React from "react";
@@ -16,9 +17,10 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Marketplace />} />
+        <Route path="/nftPage" element={<NFTPage />} />
+        <Route path="/dashboard" element={<MyNFTs />} />
+        <Route path="/bought" element={<Profile />} />
         <Route path="/sellNFT" element={<SellNFT />} />
-        <Route path="/nftPage/:tokenId" element={<NFTPage />} />
-        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
